@@ -92,3 +92,81 @@ Para resolver o problema de cold start (plataforma vazia sem base inicial de bar
 - Confirmação de agendamentos por parte do barbeiro (barbeiro aceita/recusa o agendamento feito pelo cliente).
 - Cadastro aberto (self-service) para novas barbearias.
 - Fluxo formal de reivindicação de perfil (barbearia não-credenciada → credenciada).
+
+## Elicitação de Requisitos
+
+### Pontos de interessa
+
+1. Perfil do Negócio
+* Como funciona seu trabalho? (barbearia própria, profissional em barbearia de terceiros, aluguel de cadeira, atendimento a domicílio, barbeiro autônomo)
+* Quantos profissionais trabalham no estabelecimento?
+* Quantos clientes você atende por dia/semana, em média?
+
+>💡 Esse bloco é crucial: um dono de barbearia com 5 barbeiros tem necessidades muito diferentes de um barbeiro que atende a domicílio. Pode valer a pena criar dois roteiros distintos.
+
+2. Processo Atual de Agendamento
+* Como os clientes agendam hoje? (telefone, WhatsApp, Instagram, agenda de papel, outro app)
+* Se for por aplicativo, qual aplicativo usa?
+* E se sente falta de alguma funcionalidade?
+* Como é o fluxo do agendamento até o atendimento?
+* Quais são os maiores problemas no processo atual?
+* Com que frequência clientes faltam sem avisar (no-show)? * O que você faz quando isso acontece?
+* Já aconteceu de dois clientes marcarem o mesmo horário? * Como resolveu?
+* Como lida com cancelamentos de última hora?
+
+3. Geolocalização e Deslocamento
+* Você atende somente no estabelecimento ou também vai até o cliente?
+* Se atende a domicílio: qual o raio máximo de deslocamento? 
+* Cobra taxa por deslocamento?
+* Você acredita que novos clientes te procurariam por proximidade (quem está perto da barbearia)?
+* O que faria um cliente escolher uma barbearia próxima em vez de outra?
+
+> 💡 Valide aqui a premissa central do seu sistema: o prestador realmente vê valor em ser encontrado por localização, ou a fidelidade/indicação é mais forte nesse mercado?
+
+4. Agenda e Disponibilidade
+* Quais são seus horários de funcionamento? Variam por dia da semana?
+* Quanto tempo dura cada tipo de serviço? Existe intervalo entre atendimentos (limpeza, descanso)?
+* Aceita encaixes no mesmo dia? E quanto tempo antes o cliente consegue agendar?
+* Com quanta antecedência os clientes costumam marcar?
+* Como você gerencia horários de almoço, folgas e férias?
+
+5. Serviços e Preços
+* Quais serviços você oferece? (liste com duração e preço aproximado)
+* Os preços variam por profissional ou são da casa?
+* A duração do serviço varia conforme o cliente (ex.: cabelo difícil, barba cheia)?
+
+7. Relacionamento com Clientes
+* Você mantém algum histórico dos clientes (corte preferido, fotos, alergias, conversas)?
+* Seus clientes têm barbeiro de preferência ou atendem com quem estiver disponível?
+* O que você faz para fidelizar clientes?
+* Como funciona a recuperação de clientes que sumiram?
+
+8. Comunicação
+* Como você confirma que o cliente vai comparecer?
+* Lembretes automáticos (WhatsApp, SMS, push) seriam úteis? Por qual canal?
+* Você já pede avaliações aos clientes? Onde elas aparecem (Google, Instagram)?
+* Como você responderia a uma avaliação negativa pública no app?
+
+9. Gestão de Equipe (se houver mais de um profissional)
+* Cada barbeiro controla a própria agenda ou existe uma agenda central?
+* Você precisaria controlar a performance de cada profissional?
+* Quem teria permissão para alterar horários e preços?
+
+10.   Expectativas e Disposição à Adoção
+* O que faria você trocar seu método atual por um sistema desses?
+* Quais são suas maiores desconfianças em relação a um app de agendamento?
+* Você já usou algum sistema antes? O que gostou e o que o fez abandonar?
+
+---
+
+11. Sessão extra pro futuro
+* Como funciona a divisão de faturamento (comissão, aluguel de cadeira, salário)?
+* Quais formas de pagamento você aceita?
+* Você cobraria sinal ou pré-pagamento para reduzir faltas? Por quê não?
+* Estaria disposto a receber pagamentos pelo aplicativo?
+* Qual seria sua preocupação?
+* O que faria você confiar em um sistema que gerencia seu dinheiro?
+* Qual a faixa de idade e perfil do seu público?
+* Você oferece combos, pacotes ou promoções?
+* Como você preferiria pagar? (mensalidade fixa, comissão por agendamento, gratuito com taxa no pagamento)
+* Se o app trouxesse clientes novos descontando comissão, isso te interessaria?
