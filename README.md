@@ -135,31 +135,31 @@ Para resolver o problema de cold start (plataforma vazia sem base inicial de bar
 * Os preços variam por profissional ou são da casa?
 * A duração do serviço varia conforme o cliente (ex.: cabelo difícil, barba cheia)?
 
-7. Relacionamento com Clientes
+6. Relacionamento com Clientes
 * Você mantém algum histórico dos clientes (corte preferido, fotos, alergias, conversas)?
 * Seus clientes têm barbeiro de preferência ou atendem com quem estiver disponível?
 * O que você faz para fidelizar clientes?
 * Como funciona a recuperação de clientes que sumiram?
 
-8. Comunicação
+7. Comunicação
 * Como você confirma que o cliente vai comparecer?
 * Lembretes automáticos (WhatsApp, SMS, push) seriam úteis? Por qual canal?
 * Você já pede avaliações aos clientes? Onde elas aparecem (Google, Instagram)?
 * Como você responderia a uma avaliação negativa pública no app?
 
-9. Gestão de Equipe (se houver mais de um profissional)
+8. Gestão de Equipe (se houver mais de um profissional)
 * Cada barbeiro controla a própria agenda ou existe uma agenda central?
 * Você precisaria controlar a performance de cada profissional?
 * Quem teria permissão para alterar horários e preços?
 
-10.   Expectativas e Disposição à Adoção
+9.   Expectativas e Disposição à Adoção
 * O que faria você trocar seu método atual por um sistema desses?
 * Quais são suas maiores desconfianças em relação a um app de agendamento?
 * Você já usou algum sistema antes? O que gostou e o que o fez abandonar?
 
 ---
 
-11. Sessão extra pro futuro
+10. Sessão extra pro futuro
 * Como funciona a divisão de faturamento (comissão, aluguel de cadeira, salário)?
 * Quais formas de pagamento você aceita?
 * Você cobraria sinal ou pré-pagamento para reduzir faltas? Por quê não?
