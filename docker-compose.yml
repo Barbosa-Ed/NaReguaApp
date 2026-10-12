@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    container_name: naregua-postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: naregua
+    volumes:
+      - ./supabase/migrations:/docker-entrypoint-initdb.d:ro
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d naregua"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+    name: naregua_postgres_data
+

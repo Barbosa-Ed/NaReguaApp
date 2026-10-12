@@ -16,20 +16,13 @@ Plataforma baseada em geolocalização para busca e agendamento de serviços em 
 
 ---
 
-## Modelo de Barbearias: Credenciadas x Não-Credenciadas
+## Modelo de Barbearias: Cadastro Gratuito (Self-Service)
 
-Para resolver o problema de cold start (plataforma vazia sem base inicial de barbearias), o app trabalha com dois tipos de estabelecimento no mapa, visualmente distintos (ícone/cor diferente):
+Todas as barbearias exibidas na plataforma são estabelecimentos reais e cadastrados voluntariamente de forma gratuita:
 
-- **Credenciada**: Barbearia que se cadastrou formalmente na plataforma. Possui perfil completo, catálogo de serviços, profissionais e agenda real gerenciada pelo sistema. É a única que aparece com a função de **agendamento** habilitada para o cliente.
-- **Não-credenciada**: Barbearia listada apenas como referência de localização, com dados obtidos via *scraping* de fontes públicas (ex.: Google Maps). Exibe somente localização e informações básicas — **sem** opção de agendamento, funcionando como uma camada informativa (similar ao pin de um mapa comum).
-
-**Regras de dados para estabelecimentos não-credenciados:**
-- Se o proprietário solicitar remoção do perfil, a remoção deve ser atendida.
-- Fluxo de "reivindicação" de perfil (dono de barbearia não-credenciada solicitando credenciamento) ainda **não está definido** — hoje pensado como contato manual (telefone/canal direto da equipe) seguido de envio de link de cadastro. É um ponto em aberto a ser desenhado.
-
-**Aquisição inicial (fase de lançamento):**
-- Abordagem direta com barbearias para credenciamento.
-- Cadastro aberto (self-service) para novas barbearias é planejado como evolução futura do produto.
+- **Cadastro Gratuito e Aberto**: Qualquer barbearia ou profissional autônomo pode se cadastrar diretamente pelo aplicativo/plataforma sem custo.
+- **Perfil Completo**: Cada barbearia possui dados do estabelecimento, localização (geolocalização), catálogo de serviços com preços, profissionais e gestão de agenda.
+- **Agendamento Habilitado**: Todas as barbearias visíveis no mapa possuem a função de **agendamento** habilitada para os clientes.
 
 ---
 
@@ -37,16 +30,18 @@ Para resolver o problema de cold start (plataforma vazia sem base inicial de bar
 
 **Módulo: Cliente**
 
-- **RF01 - Visualização por Geolocalização**: O sistema deve exibir no mapa as barbearias e serviços de estética próximos ao usuário, diferenciando visualmente estabelecimentos credenciados e não-credenciados.
-- **RF02 - Perfil do Estabelecimento**: O sistema deve permitir visualizar detalhes da barbearia, catálogo de serviços e tabela de preços (barbearias credenciadas) ou informações básicas de localização (barbearias não-credenciadas).
-- **RF03 - Agendamento**: O cliente deve poder selecionar serviço, profissional, data e horário disponível para agendar, exclusivamente em barbearias credenciadas.
+- **RF01 - Visualização por Geolocalização**: O sistema deve exibir no mapa as barbearias cadastradas próximas ao usuário, ordenadas por proximidade e com cálculo de distância.
+- **RF02 - Perfil do Estabelecimento**: O sistema deve permitir visualizar detalhes da barbearia (nome, endereço, fotos, telefone, horário de funcionamento), catálogo de serviços com tabela de preços e profissionais da equipe.
+- **RF03 - Agendamento**: O cliente deve poder selecionar serviço, profissional, data e horário disponível para agendar seu atendimento.
 - **RF06 - Confirmação de Presença**: O sistema deve solicitar ao cliente a confirmação de presença 24h antes do horário agendado. Caso o cliente não confirme até 5h antes do horário, o agendamento é automaticamente desfeito e o horário é liberado para novo agendamento por outro cliente.
 
 **Módulo: Barbearia & Profissional**
 
-- **RF04 - Gestão de Serviços**: O gerente deve poder cadastrar, editar e remover serviços e valores.
+- **RF00 - Cadastro Gratuito de Barbearia**: O dono/gerente pode se cadastrar gratuitamente, fornecendo dados do estabelecimento, endereço com localização no mapa e telefone.
+- **RF04 - Gestão de Serviços**: O gerente deve poder cadastrar, editar e remover serviços, durações em minutos e valores.
 - **RF05 - Gestão de Agenda**: O profissional deve poder criar horários de atendimento disponíveis, e visualizar e bloquear horários em sua agenda.
 - **RF07 - Cancelamento de Agendamento**: O barbeiro, o admin da barbearia ou o próprio cliente que realizou o agendamento podem cancelar um horário já travado. Em caso de cancelamento feito pelo barbeiro ou pelo admin, o cliente deve ser notificado.
+- **RF08 - Avaliação do Barbeiro**: Após a conclusão de um atendimento, o cliente pode avaliar o serviço prestado pelo barbeiro específico com nota (1 a 5 estrelas) e comentário opcional. A média das notas e os comentários são exibidos no perfil do profissional e da barbearia.
 
 ---
 
@@ -67,7 +62,6 @@ Para resolver o problema de cold start (plataforma vazia sem base inicial de bar
 - **RNF01 - Desempenho**: O carregamento dos dados de geolocalização e renderização do mapa deve ser rápido e responsivo.
 - **RNF02 - Segurança**: Proteção básica e armazenamento seguro dos dados cadastrais dos usuários.
 - **RNF03 - Escopo de Pagamento**: O processamento de pagamentos está fora do escopo desta versão inicial.
-- **RNF04 - Dados de Terceiros (Scraping)**: Estabelecimentos não-credenciados exibidos via dados públicos devem ter processo de remoção mediante solicitação do proprietário.
 
 ---
 
@@ -89,9 +83,8 @@ Para resolver o problema de cold start (plataforma vazia sem base inicial de bar
 ## Backlog (Próximas Versões)
 
 - Pagamento integrado à plataforma (com opção de a barbearia usar pagamento próprio do sistema ou manter pagamento externo).
-- Confirmação de agendamentos por parte do barbeiro (barbeiro aceita/recusa o agendamento feito pelo cliente).
-- Cadastro aberto (self-service) para novas barbearias.
-- Fluxo formal de reivindicação de perfil (barbearia não-credenciada → credenciada).
+- Confirmação manual de agendamentos por parte do barbeiro (aceitar/recusar).
+- Programa de fidelidade e histórico de cortes com fotos no perfil do cliente.
 
 ## Elicitação de Requisitos
 

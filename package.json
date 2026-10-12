@@ -1,0 +1,32 @@
+{
+  "name": "naregua-app-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "npm run start --workspace=@naregua/mobile",
+    "mobile": "npm run start --workspace=@naregua/mobile",
+    "mobile:android": "npm run android --workspace=@naregua/mobile",
+    "mobile:ios": "npm run ios --workspace=@naregua/mobile",
+    "mobile:web": "npm run web --workspace=@naregua/mobile",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:logs": "docker compose logs -f"
+  },
+  "keywords": [
+    "naregua",
+    "barbershop",
+    "agendamento",
+    "geolocation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react-dom": "19.2.3",
+    "react-native-web": "^0.21.2"
+  }
+}

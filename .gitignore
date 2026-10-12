@@ -139,5 +139,12 @@ dist
 
 # Vite files
 vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
 .vite/
+
+# Expo & Mobile
+.expo/
+dist/
+web-build/
+android/
+ios/
+*.orig.*
