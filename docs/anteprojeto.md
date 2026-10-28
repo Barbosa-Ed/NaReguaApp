@@ -1,59 +1,68 @@
 # Anteprojeto – NaRéguaApp
 
-**Breve visão:** Propõe-se o desenvolvimento do NaRéguaApp, aplicativo móvel de agendamento de serviços estéticos com geolocalização. O projeto visa conectar clientes e barbearias próximas, oferecendo gestão de horários, visibilidade e experiência de uso simples, com foco em autossustentabilidade. 
+**Breve visão:** Este trabalho propõe desenvolver e verificar uma aplicação web progressiva (PWA) para consulta e agendamento de serviços em barbearias. A aplicação será instalável e demonstrada localmente; a publicação na Play Store não faz parte da entrega prevista.
 
-## 1. Tema, Problema e Hipóteses 
+## 1. Tema, Problema e Hipóteses
 
-**Tema:** desenvolvimento de aplicativo de agendamento de serviços estéticos com geolocalização.
-**Problema:** inexistência de solução integrada que una gestão de agendamentos e localização em tempo real para barbearias, reduzindo esforço operacional e ampliando visibilidade.
-**Hipóteses:** o app será autossustentável; obterá adesão de barbearias e clientes; terá uso frequente; tornar-se-á principal meio de conexão entre barbeiros e clientes. 
-**Premissas:** disponibilidade na Play Store, barbearias credenciadas e base interessada. 
-**Riscos:** baixa adesão, indisponibilidade na loja, desuso. 
-**Restrições:** equipe de 2 desenvolvedores; tração dependente de esforços manuais. 
+**Tema:** desenvolvimento e verificação técnica de uma PWA local para busca por geolocalização e agendamento de serviços em barbearias.
 
-## 2. Referencial Teórico 
+**Problema de pesquisa:** como desenvolver e verificar, por meio de critérios de aceite demonstráveis, uma PWA que permita consultar barbearias próximas e realizar agendamentos, considerando os requisitos identificados para o projeto?
 
-* **Geolocalização em apps:** fundamentos de GIS e GPS para posicionamento e serviços baseados em localização. 
-* **Sistemas de agendamento digital:** filas, capacidade e redução de no-shows em serviços. 
-* **UX em serviços:** usabilidade, heurísticas e design centrado no usuário para adoção recorrente. 
-* **Empreendedorismo digital e marketplaces:** modelos de plataforma, curva de dois lados, MVP e validação. 
-* **Gestão de pequenos negócios de estética:** operação, marketing local e presença digital como alavancas competitivas. 
+**Hipóteses:** a aplicação poderá despertar interesse de barbearias e clientes, ser usada com frequência e, futuramente, sustentar um modelo de negócio. Essas hipóteses são expectativas sobre adoção e sustentabilidade. Este TCC não as testará: não haverá implantação comercial, acompanhamento de uso ou pesquisa adicional com usuários. Portanto, elas não serão tratadas como resultados comprovados.
 
-## 3. Justificativa 
+**Premissas:** o produto será uma PWA instalável, demonstrada em ambiente local; os requisitos funcionais vigentes estão registrados no README; a pesquisa de campo considerada no trabalho é o questionário já aplicado.
 
-* **Sociedade:** facilita acesso a serviços próximos, otimiza tempo e deslocamentos, melhora a experiência de contratação. 
-* **Área do conhecimento:** aplica geolocalização a serviços locais com foco em usabilidade e operações de serviços. 
-* **Barbearias:** aumenta visibilidade, automatiza agendamentos, reduz faltas por meio de notificações, gera dados gerenciais. 
-* **Lacuna:** ausência de aplicativo com mapa interativo em tempo real, agenda integrada e foco no nicho de barbearias. 
+**Riscos:** limitações do ambiente local ou de serviços externos podem afetar a demonstração; a amostra do questionário é limitada e não representa necessariamente o conjunto de profissionais, estabelecimentos ou clientes do setor.
 
-## 4. Objetivos 
+**Restrições:** equipe de dois desenvolvedores; demonstração local; sem publicação na Play Store, novas entrevistas, observação de campo ou testes de usabilidade com usuários.
 
-**Objetivo Geral:** desenvolver aplicativo de agendamento baseado em geolocalização que conecte clientes e barbearias com eficiência.
+## 2. Referencial Teórico
 
-**Objetivos Específicos:** 
-* Implementar geolocalização em tempo real (mapa de barbearias e serviços). 
-* Criar interface intuitiva para clientes e barbeiros. 
-* Desenvolver notificações de agendamento e lembretes. 
-* Credenciar até 10 barbearias no primeiro ano. 
-* Publicar na Play Store. 
-* Estabelecer modelo de negócio autossustentável. 
+* **Geolocalização em aplicações:** fundamentos de sistemas de informação geográfica e GPS para posicionamento e serviços baseados em localização.
+* **Sistemas de agendamento digital:** organização de horários, capacidade e confirmação de atendimentos em serviços.
+* **Experiência e interação:** princípios de interação e usabilidade como referência para projetar interfaces; não será feita validação de usabilidade com participantes.
+* **Empreendedorismo digital e marketplaces:** modelos de plataforma, mercados de dois lados, MVP e validação, como contexto para as hipóteses futuras de adoção e sustentabilidade.
+* **Gestão de pequenos negócios de estética:** operação, marketing local e presença digital como contexto do domínio estudado.
 
-## 5. Metodologia 
+## 3. Justificativa
 
-**Tipo:** pesquisa aplicada e desenvolvimento tecnológico. Abordagem quali-quantitativa.
-**Coleta:** questionários com usuários e barbearias; entrevistas com stakeholders; observação em campo; estudo de casos similares; testes de usabilidade com protótipos.
-**Instrumentos:** formulários online, roteiros semiestruturados, métricas de uso (retenção, conversão, no-show).
-**Desenvolvimento:** metodologia ágil (sprints semanais) por Gabriel Póvoa e Ednaldo Barbosa. Gestão de riscos e premissas monitoradas em backlog. Custos: hospedagem e assinatura da Play Store.
-**Análise:** conteúdo para dados qualitativos; estatística descritiva para questionários e métricas de produto. 
+* **Sociedade:** uma ferramenta de consulta por proximidade e agendamento pode apoiar o acesso a informações sobre serviços locais. Esse benefício é uma motivação do projeto, não um resultado medido neste TCC.
+* **Área do conhecimento:** o trabalho aplica conceitos de geolocalização, sistemas de informação e desenvolvimento de software a um problema delimitado de consulta e agendamento.
+* **Barbearias:** a proposta reúne informações do estabelecimento, serviços, profissionais e horários em um fluxo digital. O trabalho verificará os critérios funcionais definidos, sem afirmar que a solução aumentará visibilidade ou reduzirá faltas.
+* **Delimitação:** o projeto desenvolverá uma PWA para os requisitos registrados, sem afirmar que inexiste solução semelhante no mercado. A pesquisa realizada não constitui um levantamento abrangente de produtos concorrentes.
 
-## 6. Referências Bibliográficas 
+## 4. Objetivos
 
-* GOODCHILD, Michael F. Geographic information science and systems for environmental management. Annual Review of Environment and Resources, v. 28, n. 1, p. 493-519, 2003. 
-* ZANDBERGEN, Paul A. Accuracy of iPhone locations: A comparison of assisted GPS, WiFi and cellular positioning. Transactions in GIS, v. 13, p. 5-25, 2009. 
-* PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de software-9. McGraw Hill Brasil, 2021. 
+**Objetivo Geral:** desenvolver uma PWA instalável e demonstrável localmente para consulta de barbearias por localização e agendamento de serviços, e verificar seu funcionamento segundo critérios de aceite definidos para o projeto.
+
+**Objetivos Específicos:**
+
+* Analisar as respostas do questionário já aplicado, respeitando os limites da amostra, e relacioná-las à identificação dos requisitos do projeto.
+* Especificar os fluxos e critérios de aceite com base nos requisitos vigentes registrados no README.
+* Desenvolver os fluxos de consulta de estabelecimentos, visualização de serviços e profissionais, gestão de disponibilidade e criação de agendamentos previstos no escopo.
+* Verificar os cenários de aceite em ambiente local e registrar resultados, limitações e dependências observadas.
+* Documentar as hipóteses de adoção e sustentabilidade como questões não verificadas e possíveis temas para trabalho futuro.
+
+## 5. Metodologia
+
+**Tipo e abordagem:** pesquisa aplicada e desenvolvimento tecnológico. A análise do questionário terá caráter descritivo, combinando a organização de respostas abertas e fechadas conforme os dados disponíveis. O desenvolvimento será verificado por critérios de aceite e cenários funcionais.
+
+**Pesquisa de campo:** será utilizado somente o questionário já aplicado no contexto de barbearias. Não serão realizadas novas entrevistas, observações de campo ou testes de usabilidade com usuários. A descrição dos respondentes e dos resultados respeitará as informações disponíveis e as limitações da amostra; as conclusões não serão generalizadas para todo o setor ou para a população de clientes.
+
+**Instrumentos e evidências:** questionário existente, requisitos registrados no README, critérios de aceite e registro dos resultados observados nos cenários de verificação. Não serão usados indicadores de retenção, conversão ou uso de produto, pois o escopo não prevê implantação ou acompanhamento de usuários.
+
+**Desenvolvimento:** o sistema será construído de forma incremental pela dupla, com requisitos, decisões técnicas e critérios de aceite registrados no repositório. A aplicação será executada e demonstrada localmente como PWA. A arquitetura, a configuração do ambiente e as dependências necessárias serão detalhadas na documentação técnica do projeto.
+
+**Análise:** as respostas fechadas serão sumarizadas descritivamente e as respostas abertas serão organizadas por temas pertinentes aos requisitos. A verificação do sistema comparará o resultado observado com cada critério de aceite. Resultados da pesquisa e do sistema serão apresentados separadamente; hipóteses de mercado não serão consideradas comprovadas pelo questionário ou pela verificação técnica.
+
+## 6. Referências Bibliográficas
+
+* GOODCHILD, Michael F. Geographic information science and systems for environmental management. Annual Review of Environment and Resources, v. 28, n. 1, p. 493-519, 2003.
+* ZANDBERGEN, Paul A. Accuracy of iPhone locations: A comparison of assisted GPS, WiFi and cellular positioning. Transactions in GIS, v. 13, p. 5-25, 2009.
+* PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de software-9. McGraw Hill Brasil, 2021.
 * NIELSEN, Jakob et al. Usability engineering. San Francisco: Morgan Kaufmann, 1993.
-* NORMAN, Donald A.; BERKROT, Peter. The design of everyday things. New York: Basic books, 2013. 
+* NORMAN, Donald A.; BERKROT, Peter. The design of everyday things. New York: Basic books, 2013.
 * SHARP, Helen. Interaction design. John Wiley & Sons, 2003.
-* FITZSIMMONS, James A.; FITZSIMMONS, Mona J. Administração de Serviços-: operações, estratégia e tecnologia da informação. Amgh Editora, 2014. 
-* OSTERWALDER, Alexander; PIGNEUR, Yves. Business Model Generation: Ein Handbuch für Visionäre, Spielveränderer und Herausforderer. Campus Verlag, 2011. 
+* FITZSIMMONS, James A.; FITZSIMMONS, Mona J. Administração de Serviços-: operações, estratégia e tecnologia da informação. Amgh Editora, 2014.
+* OSTERWALDER, Alexander; PIGNEUR, Yves. Business Model Generation: Ein Handbuch für Visionäre, Spielveränderer und Herausforderer. Campus Verlag, 2011.
 * RIES, Eric. A startup enxuta. Leya, 2012.
